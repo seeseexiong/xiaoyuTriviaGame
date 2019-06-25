@@ -1,0 +1,46 @@
+body {
+    background-image: url(../images/desserts.png);
+    background-size: 33%;
+    position: relative;
+}
+
+.center-text {
+    text-align: center; 
+}
+ 
+.box-padding{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.box-margin {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.question {
+    font-weight: 800;
+}
+
+.fadeBox {
+    background-color: rgba(163, 241, 241, 0.829);
+}
+
+/* White space on top of list of questions*/
+#formQuestions {
+    padding-top: 70px;
+}
+
+/* timer */
+#timerDiv {
+    position: fixed;
+    width: 20%;
+    left: 50%;
+    text-align: center;
+    background-color: rgb(247, 215, 239);
+    border-radius: 30px;
+}
+
+#timer-text {
+    color: blue;
+}

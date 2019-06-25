@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Xiaoyu's Trivia Game</title>
+    <!-- link to my external css file -->
+    <link rel='stylesheet' href='assets/css/style.css'>
+    <!-- Bootstrap Popper: goes before Bootstrap JS CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Bootstrap JS CDN -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Bootstrap jQuery CDN -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Container 1 / HEADER -->
+    <div id='container1' class='container border center-text box-padding box-margin fadeBox '>
+        <h1>Xiaoyu's Trivia Game</h1>
+        <h3>X's Dessert Game!!!</h3>
+        <button type='button' id='startBtn'>START</button>
+    </div>
+
+    <!-- Container 2 / QUESTIONS -->
+    <div id='container2' class='container border box-padding box-margin fadeBox'>
+        <div id='timerDiv'>
+            <h3 class='center-text'>Timer: <span id='timer-text'></span></h3>
+        </div>
+
+        <form name='quiz' id='formQuestions'>
+            <p class='question'>1.) What is the name of the cookie with cream inside?</p>
+            <input type='radio' name='q1' value='a'>A. Oreo<br>
+            <input type='radio' name='q1' value='b'>B. Donut<br>
+            <input type='radio' name='q1' value='c'>C. Cake<br><br><br>
+
+            <p class='question'>2.) Choose the dessert that you think is hersey.</p>
+            <input type='radio' name='q2' value='a'>A. chocolate Kisses<br>
+            <input type='radio' name='q2' value='b'>B. Starburst<br>
+            <input type='radio' name='q2' value='c'>C. Cupcake<br><br><br>
+        
+            <p class='question'>3.) Choose the original flavor twizzler.</p>
+            <input type='radio' name='q3' value='a'>A. Blueberry<br>
+            <input type='radio' name='q3' value='b'>B. Cherry<br>
+            <input type='radio' name='q3' value='c'>C. Strawberry<br><br><br>
+
+            <p class='question'>4.) What do you put in a smore?</p>
+            <input type='radio' name='q4' value='a'>A. Graham cracker, marshmellow, & chocolate<br>
+            <input type='radio' name='q4' value='b'>B. Oreo, banana, & cherry<br>
+            <input type='radio' name='q4' value='c'>C. Strawberry, nutella, chips<br><br><br>
+
+            <p class='question'>5.) What two flavors are in an oreo blizzard?</p>
+            <input type='radio' name='q5' value='a'>A. Vanilla and oreo<br>
+            <input type='radio' name='q5' value='b'>B. Chocolate and oreo<br>
+            <input type='radio' name='q5' value='c'>C. Strawberry and oreo<br><br><br>
+
+        </form>
+
+        <button id='submit-btn'>Submit</button>
+    </div>
+
+    <!-- Container 3 / RESULTS -->
+    <div id='container3' class='container border center-text box-padding box-margin fadeBox'>
+        <p class='question'>Scores</p>
+        <p>Correct: <span id='correct-answers'></span></p>
+        <p>Incorrect: <span id='incorrect-answers'></span></p>
+        <p>Unanswered: <span id='unanswered'></span></p>
+
+    </div>
+
+    <!-- link to my external JS file -->
+    <script type='text/javascript' src='assets/javascript/app.js'></script>
+</body>
+</html>
